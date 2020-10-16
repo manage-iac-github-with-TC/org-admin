@@ -31,13 +31,13 @@ resource "github_repository" "org_admin" {
     dismiss_stale_reviews      = true
     require_code_owner_reviews = false
   }
-}*/
+}
 
 resource "github_team_repository" "org_admin" {
   team_id    = github_team.team1.id
   repository = github_repository.org_admin.name
   permission = "admin"
-}
+}*/
 /*================ Org Memberships =====================================================*/
 /*resource "github_membership" "org_admin" {
   username = "Chandu2105"
